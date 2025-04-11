@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: sticky;
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    background: #234c64;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .menu_icon{
+    width: 50px;
+    /* aspect-ratio: 1; */
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.logo:hover, .menu_icon:hover{
+    border: 1px solid antiquewhite;
+
+}
+
+.container{
+    display: flex;
+    /* display: inline-flex; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    border-radius: 10px;
+    /* border: 1px solid blue; */
+    overflow: hidden;
+    max-width: 700px;
+    height: 50px;
+}
+
+.marginme{
+    margin: 0 10px
+}
+
+.icon{
+    padding: 0.2rem;
+}
+
+.searchButton{
+    background-color:white;
+    border: 0;
+    padding: 3px;
+}
+
+
+.searchButton:hover{
+    background-color: antiquewhite;
+}
+
+.searchBox{
+    border:0;
+    width: 100%;
+    padding: 0.8rem;
+    outline: 0;
+     
+}
+
+#menu{
+    position: absolute;
+    display: inline-flex;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: #234c64;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+#menu li{
+    margin: 5px;
+    width: fit-content;
+    list-style: none;
+    width: 90%;
+    gap: 20px;
+
+}
+
+#menu li a{
+    display: block;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    background: rgb(183, 133, 86);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+nav{
+    display: none;
+    /* width: 100%; */
+    /* background-color: aqua; */
+}
+
+.menu_icon{
+    display: block;
+}
+
+.container{
+    /* top: 70px; */
+    /* left: 0; */
+    position: relative;
+    margin: 0 10px;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 600px){
+    .menu_icon{
+        display: none;
+    }
+    nav{
+       display: block;
+       width: fit-content;
+    }
+    .container{
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+    #menu{
+    position: relative;
+    display: inline-flex;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    background-color: #234c64;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* width: 100%; */
+    }
+
+    #menu li{
+        width: fit-content;
+    }
+}
+
+/* HERO */
+.hero{
+    min-height: 200px;
+    /* background: linear-gradient(135deg, rgba(35,76,100, 0.5)50%, rgba(35,76,100, 0.5)50%); */
+    background: linear-gradient(135deg, rgba(35,76,100, 1.0) 49%, white 53%, rgba(183, 133, 86, 1.0)49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 70px; */
+    /* top: 68px; */
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+
+
+.products{
+    display:  flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    justify-content: center;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.products div{
+    background-color: white;
+    flex-basis: 250px;
+    max-width: 300px;
+    margin: 20px;
+    min-height: 200px;
+    /* flex-grow: 1; */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    /* padding: 5px; */
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.3s ease-in-out;  
+}
+
+.products div p{
+    margin: 5px;
+}
+
+.products div span{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(183, 133, 86, 0.5);
+}
+
+
+
+.products div:hover{
+    transform: scale(1.02);
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.products button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.products button:hover{
+    transform: scale(1.02);
+}
+
+
+/* FOOTER */
+footer{
+    min-height: 100px;
+    background: #234C64;
+    color: white;
+    padding: 10px;
+  }
+  
+  footer div{
+    text-align:center;
+  }
+    
+
+
+
+
+
+

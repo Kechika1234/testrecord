@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="computer.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="laptop.css">
+</head>
+<body>
+    <header class="header">
+        <img src="computer.jpg" alt="computer.jpg" class="logo"/>
+
+        <div class="container marginme">
+            <input
+              class="searchBox"
+              type="search"
+              name="search"
+              placeholder="Enter text here..."
+            />
+            <input
+              type="image"
+              class="searchButton icon"
+              src="magnifying-glass-tilted-left.svg"
+              alt="Submit"
+            />
+        </div>
+
+        <nav>
+            <ul id="menu" class="menu">
+                <li><a class="active" href="">Home</a></li>
+                <li><a class="active" href="">Services</a></li>
+                <li><a class="active" href="">About</a></li>
+                <li><a class="active" href="">Contact</a></li> 
+            </ul>
+        </nav>
+
+        <img
+           src="mingcute--menu-fill.svg"
+           id="menu_icon"
+           class="menu_icon"
+           alt="menu_icon"
+        /> 
+    </header>
+    <main>  
+        <section class="hero">
+            <h1>MY HERO TITLE</h1>
+        </section>
+
+        <section class="products">
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+            <div>
+                <img src="computer.jpg" alt="computer.jpg" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eveniet, ipsa?
+                </p>
+                <span>5% off</span>
+                <button>pay now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            Intellectual Property Protection - Privacy Policy - Sitemap - Terms of
+            Use - User Information Legal Enquiry Guide <br />
+            © 2020-2024 exampleshop.com. All rights reserved.
+        </div>
+
+    </footer>
+    <script>
+        const menu_icon = document.querySelector(".menu_icon");
+        console.log("menu_icon", menu_icon);
+        const nav = document.querySelector("nav");
+  
+        menu_icon.addEventListener("click", () => {
+          nav.style.display === "block"?
+          nav.style.display = "none"
+         : nav.style.display = "block"
+      
+        });
+  
+        window.addEventListener("resize", () => {
+          // keep in mind that this approach directly modifies the style attribute
+          console.log("click");
+  
+          // Get the width of the browser window
+          var screenWidth =
+            window.innerWidth ||
+            document.documentElement.clientWidth ||
+            document.body.clientWidth;
+  
+          // Log the screen width to the console
+          console.log("Screen Width: " + screenWidth + " pixels");
+  
+          if (screenWidth >= 600) {
+            console.log("display block");
+            nav.style.display = "block";
+          } else {
+            console.log("display none");
+  
+            nav.style.display = "none";
+          }
+        });
+      </script>
+</body>
+</html>
