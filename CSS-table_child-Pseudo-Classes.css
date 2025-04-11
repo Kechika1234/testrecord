@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #withTable{
+    background-color: blue;
+} */
+
+/* selects any first child element */
+/* #withTable tr:first-child{
+    background-color: #12db55;
+} */
+
+/* p will be selected if its the first child */
+
+/* #withTable tr:first-child{
+    background-color: #12db55;
+} */
+
+/* selects any last child element */
+/* #withTable *:last-child{
+    background-color: #12db55;
+} */
+
+/* #withTable tr:last-child{
+    background-color: #12db55;
+} */
+
+
+/* #withTable *:nth-child(n){
+    background-color: #12db55;
+} */
+
+/* #withTable *:nth-child(4){
+    background-color: #12db55;
+} */
+
+/* #withTable tr:nth-child(even){
+    background-color: aqua;
+} */
+
+/* #withTable tr:nth-child(even){
+    background-color: aqua;
+} */
+
+
+
+/* #withTable tr:nth-child(odd){
+    background-color: rgb(36, 80, 240);
+} */
+
+/* #withTable tr:nth-child(odd){
+    background-color: rgb(36, 80, 240);
+} */
+ 
+
+/* #withTable tr:nth-child(4n){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* #withTable tr:nth-child(4n){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* starts with the first element followed by any nth term element */
+/* #withTable tr:nth-child(4n+1){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* #withTable tr:hover{
+    background-color: rgb(18, 211, 79);
+} */
+
+/* #withTable tr:hover{
+    background-color: rgb(18, 211, 79);
+} */

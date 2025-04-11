@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #withList{
+    background-color: blue;
+} */
+
+/* slects any first child element */
+/* #withList *:first-child{
+    background-color: #12db55;
+} */
+
+/* #withList li:first-child{
+    background-color: #12db55;
+} */
+
+/* selects any last child element */
+/* #withList *:last-child{
+    background-color: #12db55;
+} */
+
+/* #withList li:last-child{
+    background-color: #12db55;
+} */
+
+/* #withList *:nth-child(n){
+    background-color: #12db55;
+} */
+
+/* #withList *:nth-child(4){
+    background-color: #12db55;
+} */
+
+/* #withList li:nth-child(even){
+    background-color: aqua;
+} */
+
+/* #withList *:nth-child(even){
+    background-color: aqua;
+} */
+
+/* #withList *:nth-child(odd){
+    background-color: rgb(36, 80, 240);
+} */
+
+/* #withList li:nth-child(odd){
+    background-color: rgb(36, 80, 240);
+} */
+ 
+
+/* #withList li:nth-child(4n){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* #withList *:nth-child(4n){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* starts with the first element followed by any nth term element */
+/* #withList li:nth-child(4n+1){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* #withList li:hover{
+    background-color: rgb(18, 211, 79);
+} */
+
+/* #withList *:hover{
+    background-color: rgb(18, 211, 79);
+} */

@@ -1,0 +1,21 @@
+.textElement{
+    text-indent: 30px;
+    text-transform: none;
+    /* white-space:normal; */
+    /* white-space:pre; */
+    /* white-space:nowrap; */
+    /* white-space:pre-line; */
+    /* white-space:pre-wrap; */
+    letter-spacing:normal;
+    /* letter-spacing:3px; */
+    /* letter-spacing:-3px; */
+    word-spacing:normal;
+    /* word-spacing:3px; */
+    /* word-spacing:6px; */
+    /* word-spacing:-6px; */
+    line-height:1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-size: 20px;
+    font-style: Italic;
+    font-weight: 100px
+}

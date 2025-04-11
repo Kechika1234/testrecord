@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dim{
+    height: 500px;
+    color: red;
+    padding: 10px
+}
+
+.element{
+    background-color: aquamarine;
+    background-image:url('A House Picture.jpeg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.element2{
+    background-image: url('BISHOP DAVID OYEDEPO.jpeg');
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0 0.5)),
+    url('BISHOP DAVID OYEDEPO.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-attachment: fixed; */
+}
+

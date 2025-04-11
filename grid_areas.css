@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+    grid-gap: 10px;
+    /* max-width: 960px; */
+    /* margin: 0 auto; */
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "aside aside aside aside"
+    "section section section section"
+    "footer footer footer footer";
+}
+
+main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+body{
+    background-color: bisque;
+    font-size: large;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;
+}
+
+nav{
+    grid-area: nav;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.container>*{
+    background-color: #95bce6;
+    padding: 30px;
+    /* text-align: center; */
+}
+
+
+@media screen and (min-width: 600px) {
+    /* Styles for screens with a width greater than or equal to 600 pixels */
+    /* max-width: 960px; */
+    /* margin: 0 auto; */
+    .container{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header header header header header header header"
+        "nav nav nav nav nav nav aside aside"
+        /* ". nav nav nav nav nav nav aside aside" */
+        "main main main main main main aside aside"
+        "main main main main main main aside aside"
+        "main main main main main main aside aside"
+        "section section section section section section section section"
+        "footer footer footer footer footer footer footer footer"
+        ;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    /* Styles for screens with a width greater than or equal to 600 pixels */
+    /* max-width: 960px; */
+    /* margin: 0 auto; */
+    .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header header header header header header header header header header header"
+        "section section section nav nav nav nav nav nav aside aside aside"
+        "section section section main main main main main main aside aside aside"
+        "section section  section main main main main main main aside aside aside"
+        "section section  section main main main main main main aside aside aside"
+        "section section section main main main main main main aside aside aside"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+    }
+}

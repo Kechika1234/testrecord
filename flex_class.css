@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    /* display: inline-flex; */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* overflow: auto; */
+    
+    /* height: 500px; */
+    background-color: aqua;
+    /* //justify-content works along hte main axis */
+    /* justify-content:space-evenly;
+    justify-content:space-around;
+    justify-content:space-between;
+    justify-content:center;
+    justify-content:end;
+    justify-content:start;
+    justify-content:flex-end;
+    justify-content:flex-start;
+    justify-content:right;
+    justify-content:left; */
+
+    /* //align-items works along the cross axis */
+
+    /* align-items: end; */
+    /* align-items: flex-end; */
+    /* align-items: start; */
+    /* align-items: flex-start; */
+    /* align-items: center; */
+
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* gap: 20px; */
+}
+
+.items {
+    height: 100px;
+    /* width: 200px; */
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    flex-basis: 150px;
+    /* min-width: 150px; */
+    /* min-width: 200px; */
+    /* margin: 10px; */
+    /* max-width: 300px; */
+    /* font-size: calc(16px + 2vmin); */
+    /* font-size: calc(16px + 3vw); */
+}
+
+.item1{
+    background-color: red;
+    /* flex-grow: 1; */
+}
+
+.item2{
+    background-color: blue;
+    /* flex-grow: 2; */
+    /* margin-top: 40px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.item3{
+    background-color: green;
+    /* flex-grow: 3; */
+    /* margin-top: 80px; */
+
+}
+
+/* Flex does not affect the grand child */
+.grandchild{
+    background-color: red;
+    margin: 5px;
+}
+
+/* IMPORTANT INFORMATION */
+/* flex-wrap: wrap;
+flex-grow: 1;
+min-width: 200px;
+flex-basis: 150px;
+    display: flex;
+    align-items: center; */

@@ -1,0 +1,41 @@
+/* Universal Selector 
+   Selects all elements
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: blue; */
+    background-color: bisque;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+h1, h2, h3 {
+    font-size: xx-large;
+    color: blueviolet
+}
+
+/* exe
+group ID, class element and attribute selectors */
+
+/* compound selectors */
+
+.sons.son1 {
+    font-size: xx-large;
+    color: rgb(43, 226, 113);
+}
+
+h3.sons {
+    font-size: xx-large;
+    color: rgb(217, 226, 43);
+}
+
+.sons.son2.bro{
+    background-color:brown;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dim{
+        min-height: 200px;
+        margin-bottom: 30px;
+    }
+
+    /* Syntax */
+    /* linear-gradient([direction], color-stop1, color-stop2, ...); 
+    */
+    .myLinearGradient{
+        /* background: linear-gradient(to left, #ffcc00, #ff3300); 
+    } */
+        /* background: linear-gradient(115deg, #ffcc00, #5500ff, #ff3300);
+    } */
+        /* background: linear-gradient(to right, #ffcc00, #00ff91, #7300ff);
+    } */
+        /* background: linear-gradient(to top, #ffcc00, #00ff91, #7300ff);
+    } */
+        /* background: linear-gradient(to bottom, #ffcc00, #00ff91, #7300ff);
+    } */
+    /* background: linear-gradient(to right, transparent, #ff3300, transparent);
+}; */
+/* background: linear-gradient(to right, #ff3300, transparent, #ff3300);
+}; */
+   /* background: linear-gradient(135deg, transparent, #ff3300, transparent);
+}; */
+/* background: linear-gradient(135deg, #ff3300, transparent, #ff3300);
+}; */
+/* background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(160, 31, 31, 0.5)50%); */
+/* background: linear-gradient(135deg, rgba(0,0,0,0.5)50%, rgba(160, 31, 31, 0.5)50%); */
+/* background: linear-gradient(45deg, red 40%, blue 50%, green 30%, yellow 80%); */
+/* background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mrsoft building image.jpg");
+;
+background-size: cover; background-position: center; */
+    }
+
+    /* Syntax */
+    /* radial-gradient([shape] [size] at [position], color-stop1, color-stop2, ...);*/
+    .myRadialGradient{
+        /* background: radial-gradient(circle, #ffcc00, #ff3300); */
+        background: radial-gradient(ellipse at 30% 70%, #ffcc00, #ff3300);
+        background: radial-gradient(circle, #ffcc00, #ff3300, #00ff91, #7300ff, #ff0000);
+        background: radial-gradient(circle, #ffcc00 40px, #ff3300 60px, #00ff91 80px, #7300ff 100px, #ff0000 120px);
+    }
+</style>
+<body>
+    <div class="dim myLinearGradient">
+        Linear Gradient
+    </div>
+
+    <div class="dim myRadialGradient">
+        Radial Gradient
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* h1 {
+    background-color: brown;
+} */
+
+/* div{
+    background-color: chartreuse;
+} */
+
+/* .father{
+    background-color: brown;
+} */
+
+
+/* Descendant combinator (whitespace):
+Selects all elements that are descendants of a specified element. */
+
+/* .father *{
+    background-color: brown;
+} */
+
+/* .father div h1{
+    background-color: rgb(86, 33, 348)
+} */
+
+/* .father div div h1{
+    background-color: brown;
+} */
+
+
+/* Child combinator (>):
+Selects all elements that are a direct child of a specified element. */
+
+/* p{
+    background-color: rgb(18, 182, 223);
+    color: blue;
+} */
+
+/* .father>p{
+    background-color: rgb(18, 182, 223);
+    color: blue;
+} */
+
+/* .father>.sons{
+    background-color: rgb(223, 18, 151);
+    color: blue;
+} */
+
+/* b{
+    background-color: blueviolet;
+    color: white;
+} */
+
+/* .father>div>h1{
+    background-color: rgb(49, 18, 223);
+    color: rgb(85, 255, 0);
+} */
+
+/* .father>div>div>h1{
+    background-color: rgb(196, 223, 18);
+    color: blue;
+} */
+
+/* .father>h1{
+    color:rgb(42, 165, 71);
+} */
+
+/* .father>div>*{
+    background-color: brown;
+    color: chartreuse;
+} */
+
+/* .father>div>div, h1, h2{
+    background-color: brown;
+    color: chartreuse;
+} */
+
+
+/* Adjacent sibling combinator (+):
+Selects an element that is immediately preceded by a specified element */
+
+
+/* .sibling2{
+    display: none;
+} */
+
+/* .father+* {
+    background-color: brown;
+    display: block;
+} */
+
+
+
+/* General sibling combinator (~):
+Selects all elements that are siblings of a specified element and 
+share the same parent. */
+
+/* .father p~*{
+    background-color: brown;
+} */
+
+/* .father~*{
+    background-color: rgb(95, 42 165);
+} */
+
+/* ATTRIBUTE SELECTOR */
+/* [class="sons"]{
+    background-color: blue;
+} */
+
+/* [class]{
+    background-color: blue;
+} */
+
+/* [type="text"]{
+    background-color: blueviolet;
+} */
+
+/* PSEUDO CLASS SELECTORS
+.father>div:hover{
+    background-color: brown
+} */
+
+/* .father>div:active{
+    background-color: rgb(42, 165, 58);
+} */
+
+/* .father>div:nth-child(even){
+    background-color: blue;
+} */
+
+/* .father div h1, .father div h2{
+    background-color: blue;
+} */
+
+
